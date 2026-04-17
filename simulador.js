@@ -41,5 +41,7 @@ function calcular(){
     let cuotaFormateada = cuotaMensual.toFixed(2);
     document.getElementById("spnCuotaMensual").innerText = cuotaFormateada;
 
+    let analizarCredito = aprobarCredito(valorDisponible, cuotaMensual);
+    document.getElementById("spnEstadoCredito").innerText =analizarCredito;
 
 }
