@@ -22,5 +22,17 @@ function calcular(){
     let capacidad=document.getElementById("spnCapacidadPago");
     capacidad.innerText=pago; 
 
+    let cmpMontoFloat = document.getElementById("txtMonto");
+    let monto =parseFloat(cmpMontoFloat.value);
+
+    let cmpTasaFloat =document.getElementById("txtTasaInteres");
+    let tasa = parseInt(cmpTasaFloat.value);
+
+    let cmpPlazoAnioFloat =document.getElementById("txtPlazo");
+    let plazoAnio = parseInt(cmpPlazoAnioFloat.value);
+
+    let interes = calcularInteresSimple(monto,tasa,plazoAnio);
+    document.getElementById("spnInteresPagar").innerText= interes;  
+
 
 }
