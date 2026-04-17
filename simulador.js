@@ -34,5 +34,8 @@ function calcular(){
     let interes = calcularInteresSimple(monto,tasa,plazoAnio);
     document.getElementById("spnInteresPagar").innerText= interes;  
 
+    let valorPagar = calcularTotalPagar(monto,interes);
+    document.getElementById("spnTotalPrestamo").innerText= valorPagar;
+
 
 }
