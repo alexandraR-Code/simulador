@@ -7,13 +7,6 @@ function calcular(){
     let cmpEngresosFloat = document.getElementById("txtEgresos");
     let egresos =parseFloat(cmpEngresosFloat.value);
     
-    
-    let cmpIngresoFloat= document.getElementById("txtIngresos");
-    let ingresos = parseFloat(cmpIngresoFloat.value);
-
-    let cmpEngresosFloat = document.getElementById("txtEgresos");
-    let egresos =parseFloat(cmpEngresosFloat.value);
-    
     let valorDisponible=calcularDisponible(ingresos,egresos);
     let disponible=document.getElementById("spnDisponible");
     disponible.innerText=valorDisponible;
@@ -32,16 +25,18 @@ function calcular(){
     let plazoAnio = parseInt(cmpPlazoAnioFloat.value);
 
     let interes = calcularInteresSimple(monto,tasa,plazoAnio);
-    document.getElementById("spnInteresPagar").innerText= interes;  
+    document.getElementById("spnInteresPagar").innerText= interes;   
 
     let valorPagar = calcularTotalPagar(monto,interes);
     document.getElementById("spnTotalPrestamo").innerText= valorPagar;
 
+   
     let cuotaMensual = calcularCuotaMensual(valorPagar, plazoAnio);
     let cuotaFormateada = cuotaMensual.toFixed(2);
     document.getElementById("spnCuotaMensual").innerText = cuotaFormateada;
 
     let analizarCredito = aprobarCredito(valorDisponible, cuotaMensual);
-    document.getElementById("spnEstadoCredito").innerText =analizarCredito;
-
+    document.getElementById("spnEstadoCredito").innerText = analizarCredito;
+    
 }
+

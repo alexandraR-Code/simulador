@@ -1,0 +1,12 @@
+Actúa como un diseñador UX/UI experto especializado en experiencia de usuario para plataformas financieras. A partir del HTML y CSS que te proporcionaré, rediseña completamente la interfaz visual siguiendo un enfoque minimalista, moderno y elegante.
+Inspírate en la estética del sitio web de Bancolombia Personas, manteniendo una apariencia limpia, organizada y enfocada en la claridad y confianza del usuario.
+Aplica las siguientes mejoras de diseño:
+Utiliza una paleta de colores basada en amarillo (#FFD200), blanco, negro y grises suaves, evitando la saturación visual.
+Implementa tarjetas (cards) para organizar el contenido, cada una con bordes sutiles o líneas alrededor que delimiten claramente las secciones.
+Mejora la jerarquía visual usando tipografía moderna (como Poppins o Inter), diferenciando títulos, subtítulos y contenido.
+Incorpora microinteracciones elegantes:
+Los botones deben moverse ligeramente al pasar el cursor (hover), utilizando transformaciones como translateY y scale.
+Añade sombras suaves y transiciones fluidas para mejorar la experiencia.
+Asegura suficiente espacio en blanco (whitespace) para lograr un diseño limpio y profesional.
+Mantén la estructura clara y centrada en el usuario, facilitando la navegación y destacando las acciones principales (CTA).
+El resultado debe ser una interfaz moderna, intuitiva y visualmente atractiva, que transmita confianza y profesionalismo, similar a un banco digital actual pero con un enfoque más minimalista e interactivo.

@@ -17,23 +17,24 @@ function calcularInteresSimple(monto,tasa, plazoAnio){
     valorInteres = plazoAnio * monto * (tasa /100);
     return valorInteres;
 }
-function calcularTotalPagar (monto, interes){
+ function calcularTotalPagar (monto, interes){
     let valorPagar;
     valorPagar  = monto + interes + 100;
     return valorPagar;
-}
-function calcularCuotaMensual(total, plazoAnio){
+ }
+ function calcularCuotaMensual(total, plazoAnio){
     let cuotaMensual;
     cuotaMensual = total /(plazoAnio * 12);
     return cuotaMensual;
-}
-function  aprobarCredito(capacidadPago, cuotaMensual){
-    aproobado = true;
-    rechazado = false;
-    if(capacidadPago > cuotaMensual){
-        return true;
-    } else if(capacidadPago < cuotaMensual){
-        return false;
-    }
+ }
+ function  aprobarCredito(capacidadPago, cuotaMensual){
+ let estado = cuotaMensual / capacidadPago;
 
+    if (estado <= 0.3) {
+        return "APROBADO";
+    } else if (estado > 0.3 && estado <= 0.5) {
+        return "RIESGO";
+    } else {
+        return "RECHAZADO";
+    }
 }
