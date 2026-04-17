@@ -37,5 +37,9 @@ function calcular(){
     let valorPagar = calcularTotalPagar(monto,interes);
     document.getElementById("spnTotalPrestamo").innerText= valorPagar;
 
+    let cuotaMensual = calcularCuotaMensual(valorPagar, plazoAnio);
+    let cuotaFormateada = cuotaMensual.toFixed(2);
+    document.getElementById("spnCuotaMensual").innerText = cuotaFormateada;
+
 
 }
