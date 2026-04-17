@@ -7,8 +7,20 @@ function calcular(){
     let cmpEngresosFloat = document.getElementById("txtEgresos");
     let egresos =parseFloat(cmpEngresosFloat.value);
     
+    
+    let cmpIngresoFloat= document.getElementById("txtIngresos");
+    let ingresos = parseFloat(cmpIngresoFloat.value);
+
+    let cmpEngresosFloat = document.getElementById("txtEgresos");
+    let egresos =parseFloat(cmpEngresosFloat.value);
+    
     let valorDisponible=calcularDisponible(ingresos,egresos);
     let disponible=document.getElementById("spnDisponible");
     disponible.innerText=valorDisponible;
+
+    let pago =calcularCapacidadPago(valorDisponible);
+    let capacidad=document.getElementById("spnCapacidadPago");
+    capacidad.innerText=pago; 
+
 
 }
