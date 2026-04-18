@@ -30,14 +30,16 @@
 
         <div class="field">
             <label>Ingresos</label>
-            <input type="text" id="txtIngresos" placeholder="$ 0">
-            <small class="error"></small>
+            <span>$</span>
+            <input type="text" id="txtIngresos" placeholder="0">
+            <small id="errorIngresos" class="error"></small>
         </div>
 
         <div class="field">
             <label>Egresos</label>
-            <input type="text" id="txtEgresos" placeholder="$ 0">
-            <small class="error"></small>
+            <span>$</span>
+            <input type="text" id="txtEgresos" placeholder="0">
+            <small id="errorEgresos" class="error"></small>
         </div>
 
         <div class="result">
@@ -52,17 +54,25 @@
 
         <div class="field">
             <label>Monto</label>
-            <input type="text" id="txtMonto" placeholder="$ 0">
+            <span>$</span>
+            <input type="text" id="txtMonto" placeholder="0">
+            <small id="errorMonto" class="error"></small>
         </div>
 
         <div class="field">
             <label>Plazo</label>
-            <input type="text" id="txtPlazo" placeholder="$ 0">
+            <input type="text" id="txtPlazo" placeholder="0">
+            <small id="errorPlazo" class="error"></small>
         </div>
 
         <div class="field">
             <label>Interés</label>
-            <input type="text" id="txtTasaInteres" placeholder="$ 0%">
+            <div class="opciones-interes">
+                <button onclick="seleccionarInteres(5, this)">5%</button>
+                <button onclick="seleccionarInteres(10, this)">10%</button>
+                <button onclick="seleccionarInteres(15, this)">15%</button>
+            </div>
+            <small id="errorInteres" class="error"></small>
         </div>
 
         <div class="result">
@@ -80,7 +90,7 @@
     <!-- BOTONES -->
     <div class="buttons">
         <button class="primary" onclick="calcular()">Calcular</button>
-        <button class="secondary" id="btnReiniciar">Reiniciar</button>
+        <button class="secondary" id="btnReiniciar" onclick="reiniciar()">Reiniciar</button>
     </div>
 
 </div>

@@ -1,0 +1,111 @@
+Prompts 1:
+
+Tengo un simulador de crédito desarrollado en HTML, CSS y JavaScript.
+Necesito que agregues validaciones completas al formulario con las siguientes reglas:
+1. Las validaciones deben ejecutarse al presionar el botón "Calcular".
+2. No se debe usar alert(). Los errores deben mostrarse debajo de cada campo usando etiquetas <small>.
+3. Cada campo tiene un <small class="error"> donde se debe mostrar el mensaje.
+4. Validar los siguientes campos:
+- Ingresos:
+  * Obligatorio
+  * Debe ser numérico
+  * Debe ser mayor a 0
+- Egresos:
+  * Obligatorio
+  * Debe ser numérico
+  * Debe ser mayor o igual a 0
+- Monto:
+  * Obligatorio
+  * Debe ser numérico
+  * Debe estar entre 100 y 50000
+- Plazo:
+  * Obligatorio
+  * Debe ser numérico entero
+  * Debe estar entre 1 y 30 años
+- Tasa de interés:
+  * Obligatorio
+  * Debe ser numérico
+5. Si hay errores:
+   - No debe ejecutarse ningún cálculo
+   - Se deben mostrar mensajes específicos debajo de cada campo
+6. Si todos los datos son correctos:
+   - Ejecutar el cálculo normalmente
+7. Crear una función llamada validarCampos() que:
+   - Reciba los valores de los campos
+   - Limpie errores anteriores
+
+   - Muestre nuevos errores si existen
+   - Retorne true si hay errores y false si todo está correcto
+
+8. El código debe ser claro, simple y fácil de entender para estudiantes.
+
+Entrégame únicamente el código JavaScript listo para integrar en mi función calcular().
+
+Prompt 2.
+
+Mejora la experiencia de usuario en mi formulario.
+
+Requisitos:
+- Cuando un campo tenga error, el input debe tener borde rojo y fondo suave rojo.
+- Los mensajes de error deben aparecer debajo del input.
+- El diseño no debe romperse al mostrar errores.
+- Los estilos deben ser modernos y suaves.
+
+Prompt 3.
+Agrega formato de moneda a todos los resultados del simulador de crédito.
+
+Requisitos:
+- Mostrar valores en formato dólar ($).
+- Usar separadores de miles.
+- Mostrar siempre dos decimales.
+- Aplicar formato a:
+  - Disponible
+  - Capacidad de pago
+  - Interés
+  - Total a pagar
+  - Cuota mensual
+
+Prompt 4.
+
+Implementa un botón "Reiniciar" en mi simulador.
+
+Requisitos:
+- Limpiar todos los inputs.
+- Limpiar resultados calculados.
+- Limpiar mensajes de error.
+- Quitar estilos de error (bordes rojos).
+- Reiniciar estado del crédito a "Analizando...".
+- Reiniciar selección de tasa de interés (botones).
+
+Prompt 5.
+
+Reemplaza el input de tasa de interés por botones interactivos.
+
+Requisitos:
+- Crear botones de 5%, 10% y 15%.
+- Al hacer clic, guardar la tasa seleccionada en una variable.
+- Mostrar visualmente qué botón está seleccionado.
+- Solo se puede seleccionar una opción.
+- Validar que el usuario haya seleccionado una tasa antes de calcular.
+
+Prompt 6.
+
+Mejora la visualización del estado del crédito.
+
+Requisitos:
+- Mostrar estado como APROBADO, RIESGO o RECHAZADO.
+- Cambiar color según estado:
+  - Verde: aprobado
+  - Naranja: riesgo
+  - Rojo: rechazado
+- Aplicar estilos tipo etiqueta (background suave + texto destacado).
+
+Prompt 7.
+
+Agrega animaciones a los resultados del simulador.
+
+Requisitos:
+- Cuando se actualicen los valores, aplicar una animación suave.
+- Usar efecto de escala o cambio de color.
+- La animación debe ser rápida (menos de 0.5s).
+- Aplicar a todos los resultados mostrados.
